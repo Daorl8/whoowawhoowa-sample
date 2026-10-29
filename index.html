@@ -136,6 +136,9 @@ h1,h2,h3,p{ margin:0; }
 .tiles figure{ margin:0; }
 .tiles img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:4px; }
 .tiles figcaption{ margin-top:8px; font-family:var(--display); font-size:1.02rem; }
+.tiles .feat{ grid-column:1 / -1; }
+.tiles .feat figcaption{ font-size:1.3rem; }
+@media (min-width:900px){ .tiles .feat{ grid-column:span 2; grid-row:span 2; } .tiles .feat img{ height:calc(100% - 38px); } }
 .ck-cat{ width:min(300px,62%); margin:52px auto -84px; }
 @media (min-width:900px){ .ck-cat{ width:320px; margin-bottom:-120px; } }
 
@@ -233,6 +236,7 @@ h1,h2,h3,p{ margin:0; }
         <p>커피와 음료, 그리고 디저트와 샌드위치. 낮 동안 가볍게 들러 쉬어 가세요.</p>
       </div>
       <div class="tiles">
+        <figure class="feat reveal"><img loading="lazy" src="wh-cf-cake.webp" alt="체리와 진주 장식을 올린 분홍 딸기 크림 케이크" width="1000" height="1000" /><figcaption>딸기 케이크</figcaption></figure>
         <figure class="reveal"><img loading="lazy" src="wh-cf-drink.webp" alt="별 모양 과일이 들어간 붉은 음료" width="700" height="700" /><figcaption>시즌 음료</figcaption></figure>
         <figure class="reveal"><img loading="lazy" src="wh-cf-icecream.webp" alt="쿠키와 콘을 올린 아이스크림 디저트" width="700" height="700" /><figcaption>아이스크림 디저트</figcaption></figure>
         <figure class="reveal"><img loading="lazy" src="wh-cf-croissant.webp" alt="버터와 팥을 넣은 크루아상" width="700" height="700" /><figcaption>크루아상</figcaption></figure>
