@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>후와후와 WHOOWA | 커피 · 칵테일 · 디저트</title>
-<meta name="description" content="Do you want coffee? Do you want cocktail? 커피와 칵테일, 디저트가 있는 후와후와. 수~일 12:00~20:00, 월 · 화 휴무. 0507-1475-1711." />
+<meta name="description" content="Do you want coffee? Do you want cocktail? 대전 둔산동 커피와 칵테일, 디저트가 있는 후와후와. 시청역 2번 출구 614m, 일요일 휴무. 0507-1428-6543." />
 <link rel="canonical" href="https://whoowa-sample.lgt3232.workers.dev/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:site_name" content="후와후와 WHOOWA" />
 <meta property="og:title" content="후와후와 · Coffee or Cocktail?" />
-<meta property="og:description" content="커피와 칵테일, 디저트가 있는 후와후와." />
+<meta property="og:description" content="대전 둔산동, 커피와 칵테일, 디저트가 있는 후와후와." />
 <meta property="og:url" content="https://whoowa-sample.lgt3232.workers.dev/" />
 <meta property="og:image" content="https://whoowa-sample.lgt3232.workers.dev/og-whoowa.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -26,11 +26,13 @@
   "name": "후와후와 WHOOWA",
   "url": "https://whoowa-sample.lgt3232.workers.dev/",
   "image": "https://whoowa-sample.lgt3232.workers.dev/og-whoowa.jpg",
-  "telephone": "+82-507-1475-1711",
+  "telephone": "+82-507-1428-6543",
   "servesCuisine": ["Coffee", "Cocktails", "Desserts"],
-  "address": { "@type": "PostalAddress", "streetAddress": "월드컵로13길 79 1층", "addressLocality": "마포구", "addressRegion": "서울특별시", "addressCountry": "KR" },
+  "address": { "@type": "PostalAddress", "streetAddress": "둔산남로9번길 75 1층", "addressLocality": "서구", "addressRegion": "대전광역시", "addressCountry": "KR" },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "20:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Friday"], "opens": "11:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Friday"], "opens": "19:00", "closes": "23:59" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Thursday"], "opens": "11:00", "closes": "18:00" }
   ],
   "sameAs": ["https://www.instagram.com/whoowa.whoowa_dunsan/"]
 }
@@ -157,6 +159,10 @@ h1,h2,h3,p{ margin:0; }
 .info > div{ display:grid; grid-template-columns:88px 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); }
 .info dt{ font-family:var(--display); font-weight:400; font-size:1.02rem; }
 .info dd{ margin:0; }
+.hours{ border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.hours th, .hours td{ padding:2px 0; text-align:left; font-weight:400; vertical-align:baseline; white-space:nowrap; }
+.hours th{ padding-right:16px; font-weight:600; }
+.hours td.br{ font-size:.86rem; color:var(--soft); padding-bottom:6px; }
 .info dd small{ display:block; color:var(--soft); font-size:.86rem; margin-top:4px; }
 .visit .links{ display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
 .mapframe{ width:100%; height:340px; border:1.5px solid var(--ink); border-radius:4px; }
@@ -206,7 +212,7 @@ h1,h2,h3,p{ margin:0; }
           <a class="btn fill" href="https://www.instagram.com/whoowa.whoowa_dunsan/" target="_blank" rel="noopener">인스타그램 보기</a>
           <a class="btn" href="#visit">오시는 길</a>
         </div>
-        <p class="when">수~일 12:00~20:00 · 월 · 화 휴무</p>
+        <p class="when">대전 둔산동 · 11:00 오픈 · 일요일 정기휴무</p>
         <img class="hero-cat" src="wh-cat.webp" alt="칵테일잔을 든 노란 고양이 캐릭터" width="600" height="631" />
       </div>
       <figure class="hero-pic reveal" style="--d:.1s">
@@ -255,8 +261,8 @@ h1,h2,h3,p{ margin:0; }
     <div class="wrap reveal">
       <p class="label">THE NAME</p>
       <h2 id="name-h">후와후와</h2>
-      <p class="cloud">몽글몽글 푹신푹신, 구름 같은</p>
-      <p>빵의 모습으로 나오기 전, 부드러운 빵 반죽의 모습을 담은 이름이에요.</p>
+      <p class="cloud">후와후와한 게 뭐예요?</p>
+      <p>고양이, 툇마루, 그리고 따사로운 봄볕처럼 포근한 기억.<br />커피와 칵테일 드시러 오세요.</p>
     </div>
   </section>
 
@@ -279,23 +285,32 @@ h1,h2,h3,p{ margin:0; }
     <div class="wrap">
       <div class="side-head reveal">
         <div><p class="label">VISIT</p><h2 id="visit-h"><span class="note">Come on in!</span></h2></div>
-        <p>망원역에서 걸어서 10분이 안 걸려요.</p>
+        <p>시청역 2번 출구에서 걸어올 수 있어요. 식물이 가득한 1층을 찾아 주세요.</p>
       </div>
       <div class="visit">
         <div class="reveal">
           <dl class="info">
-            <div><dt>주소</dt><dd>서울 마포구 월드컵로13길 79 1층<small>망원역 2번 출구에서 약 411m</small></dd></div>
-            <div><dt>영업시간</dt><dd>수~일 12:00~20:00<small>매주 월 · 화요일 정기휴무</small></dd></div>
-            <div><dt>전화</dt><dd><a href="tel:050714751711">0507-1475-1711</a></dd></div>
+            <div><dt>주소</dt><dd>대전 서구 둔산남로9번길 75 1층<small>시청역 2번 출구에서 약 614m · 인생곰탕과 꾸드뱅 사이 e스마트빌 건물 1층</small></dd></div>
+            <div><dt>영업시간</dt><dd>
+              <table class="hours"><tbody>
+                <tr><th scope="row">월 · 수 · 금</th><td>11:00~24:00</td></tr>
+                <tr><th scope="row"></th><td class="br">브레이크 17:00~19:00</td></tr>
+                <tr><th scope="row">화 · 목</th><td>11:00~18:00</td></tr>
+                <tr><th scope="row">토</th><td>인스타그램 공지 확인</td></tr>
+                <tr><th scope="row">일</th><td>정기휴무</td></tr>
+              </tbody></table>
+            </dd></div>
+            <div><dt>편의</dt><dd>주차 · 포장 · 반려동물 동반 · 대기 공간</dd></div>
+            <div><dt>전화</dt><dd><a href="tel:050714286543">0507-1428-6543</a></dd></div>
             <div><dt>인스타그램</dt><dd><a href="https://www.instagram.com/whoowa.whoowa_dunsan/" target="_blank" rel="noopener">@whoowa.whoowa_dunsan</a></dd></div>
           </dl>
           <div class="links">
             <a class="btn fill" href="https://www.instagram.com/whoowa.whoowa_dunsan/" target="_blank" rel="noopener">인스타그램</a>
-            <a class="btn" href="https://map.naver.com/p/entry/place/1087879784" target="_blank" rel="noopener">네이버 길찾기</a>
-            <a class="btn" href="tel:050714751711">전화하기</a>
+            <a class="btn" href="https://map.naver.com/p/entry/place/2063921921" target="_blank" rel="noopener">네이버 길찾기</a>
+            <a class="btn" href="tel:050714286543">전화하기</a>
           </div>
         </div>
-        <iframe class="mapframe reveal" title="후와후와 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EB%A1%9C13%EA%B8%B8%2079&amp;z=17&amp;output=embed"></iframe>
+        <iframe class="mapframe reveal" title="후와후와 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%82%A8%EB%A1%9C9%EB%B2%88%EA%B8%B8%2075&amp;z=17&amp;output=embed"></iframe>
       </div>
     </div>
   </section>
@@ -305,14 +320,14 @@ h1,h2,h3,p{ margin:0; }
   <div class="wrap">
     <img src="wh-cat-face.webp" alt="" width="240" height="151" loading="lazy" />
     <b>후와후와 WHOOWA</b>
-    <p>서울 마포구 월드컵로13길 79 1층 · 0507-1475-1711<br />수~일 12:00~20:00 · 월 · 화 휴무 · © 후와후와</p>
+    <p>대전 서구 둔산남로9번길 75 1층 · 0507-1428-6543<br />일요일 정기휴무 · © 후와후와</p>
   </div>
 </footer>
 
 <div class="quick" aria-label="빠른 연결">
   <a class="fill" href="https://www.instagram.com/whoowa.whoowa_dunsan/" target="_blank" rel="noopener">인스타그램</a>
-  <a href="tel:050714751711">전화</a>
-  <a href="https://map.naver.com/p/entry/place/1087879784" target="_blank" rel="noopener">길찾기</a>
+  <a href="tel:050714286543">전화</a>
+  <a href="https://map.naver.com/p/entry/place/2063921921" target="_blank" rel="noopener">길찾기</a>
 </div>
 
 <script>
